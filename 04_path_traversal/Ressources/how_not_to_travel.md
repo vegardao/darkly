@@ -10,19 +10,14 @@ Acceder a du contenu normalement inaccessible via les liens symboliques `..`
 ```
 
 ## Fix possible
-Refuser l'acces aux utilisateurs des pages situees en dessous de la racine du site
-
+Refuser l'acces aux utilisateurs des pages situees en dessous de la racine du site  
 Mettre en place une protection sur les repertoires contenant des donnees sensibles
 
 ## Explication
-On peut imaginer qu'un webmaster securise son site par mot de passe avec les fichiers .ht**
-
-On pourrait trouver le .htaccess en testant l'adresse `../admin/.htaccess`
-
-Il pourrait nous donner l'emplacement d'un `.htpasswd`
-
-En accedant alors a ce fichier, on aurait acces aux mots de passes
-
+On peut imaginer qu'un webmaster securise son site par mot de passe avec les fichiers .ht**  
+On pourrait trouver le .htaccess en testant l'adresse `../admin/.htaccess`  
+Il pourrait nous donner l'emplacement d'un `.htpasswd`  
+En accedant alors a ce fichier, on aurait acces aux mots de passes  
 On pourrait imaginer, dans un site ou les utilisateurs peuvent poster des articles et
 que ces articles soient stocke sur le serveur avec un nom de fichier egal au nom de l'article,
 qu'un utilisateur malvaillant nomme son article `../index.html` dans le but de modifier le site
