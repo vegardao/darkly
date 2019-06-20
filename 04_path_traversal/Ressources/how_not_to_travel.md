@@ -12,7 +12,7 @@ Acceder a du contenu normalement inaccessible via les liens symboliques `..`
 * Mettre en place une protection sur les repertoires contenant des donnees sensibles
 
 ## Explication
-On peut imaginer qu'un webmaster securise son site par mot de passe avec les fichiers `.ht*`\ 
+On peut imaginer qu'un webmaster securise son site par mot de passe avec les fichiers `.ht*` \ 
 On pourrait trouver le `.htaccess` en testant l'adresse *../admin/.htaccess*\
 Il pourrait nous donner l'emplacement d'un `.htpasswd`\
 En accedant alors a ce fichier, on aurait acces aux mots de passes\
