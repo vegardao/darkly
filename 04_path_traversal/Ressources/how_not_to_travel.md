@@ -2,7 +2,7 @@
 Acceder a du contenu normalement inaccessible via les liens symboliques `..`
 
 ## Comment obtenir le flag
-* Naviguer dans le serveur a l'aide de l'adresse `ip`/?page=
+* Naviguer dans le serveur a l'aide de l'adresse *`ip`/?page=*
 * En ajoutant des `../` on obtient des messages nous invitant a continuer
 * Une fois a `ip`/?page=../../../../../../../../ le message nous invitea trouver le fichier pour obtenir le flag
 * On obtient le flag en testant le fichier `etc/passwd`
@@ -13,7 +13,7 @@ Acceder a du contenu normalement inaccessible via les liens symboliques `..`
 
 ## Explication
 On peut imaginer qu'un webmaster securise son site par mot de passe avec les fichiers `.ht*`\ 
-On pourrait trouver le .htaccess en testant l'adresse `../admin/.htaccess`\
+On pourrait trouver le .htaccess en testant l'adresse *../admin/.htaccess*\
 Il pourrait nous donner l'emplacement d'un `.htpasswd`\
 En accedant alors a ce fichier, on aurait acces aux mots de passes\
 
