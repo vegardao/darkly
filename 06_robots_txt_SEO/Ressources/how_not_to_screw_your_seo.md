@@ -1,0 +1,3 @@
+Le fichier d'indexation robots.txt est disponible à la racine (*`ip`/robots.txt*). Il indique deux paths ne devant pas être indexés:
+*/whatever* et */.hidden*. L'accès à */whatever* n'est pas protégé et contient le fichier *htpasswd* sur lequel est écrit: `root:8621ffdbc5698829397d97767ac13db3` dont la valeur décryptée est `dragon` en md5
+En accédant aà la page *`ip`/admin/* et en entrant login: `root` et password: `dragon`, on obtient le flag
