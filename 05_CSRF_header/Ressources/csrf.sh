@@ -5,5 +5,5 @@ referer="Referer: https://www.nsa.gov/"
 user_agent="User-Agent: ft_bornToSec"
 host="Host: $1"
 
-req=$(curl -H "${referer}" -H "${user_agent}" -X GET ${url} | grep "flag")
+req=$(curl -H "${referer}" -H "${user_agent}" -X GET ${url} --silent | grep -oE 'The flag is : [[:alnum:]]{1,100}')
 echo ${req}
