@@ -10,6 +10,7 @@ Modifier une valeur d'un sondage pour la trafiquer
 ## Fix possible
 * Ajouter une verification en back afin de limiter la valeur transmise par le front
 * On pourrait ajouter en HTML un `min` et un `max` mais il faudrait quand meme avoir une verification en back
+`<input type="number" min="1" max="10" />`
 * Une facon un peu plus securisee que l'HTML serait de le gerer en JavaScript (plus difficile a modifier par l'utilisateur)
 
 ## Explication
