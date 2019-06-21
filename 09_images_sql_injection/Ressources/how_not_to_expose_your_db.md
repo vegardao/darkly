@@ -1,4 +1,4 @@
-`ip`/index.php?page=member
+`ip`/?page=searchimg
 
 Note: tous les codes suivants ont été insérés dans l'input liée au submit.
 
