@@ -3,8 +3,9 @@ Acceder a une page non desiree via une redirection
 
 ## Comment obtenir le flag
 * Copier l'adresse d'un des liens de bas de page, redirigeant vers les reseaux sociaux
-* Modifier le site de redirection par `admin`
-* On obtient l'adresse: `ip`/index.php?page=redirect&site=admin
+* Modifier le site de redirection par `unsitefrauduleux`
+* On obtient l'adresse: `ip`/index.php?page=redirect&site=`unsitefrauduleux`
+(Tips: `unsitefrauduleux` peut etre remplace par ce que vous voulez !)
 
 ## Fix possible
 * Eviter d'utiliser des redirections
