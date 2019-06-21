@@ -1,5 +1,5 @@
 # Unprotected Submit - XSS
-Sugmit une valeur pour un envoi de mail
+Submit une valeur pour un envoi de mail
 
 ## Comment obtenir le flag
 * Acceder a la page `ip`/?page=recover
