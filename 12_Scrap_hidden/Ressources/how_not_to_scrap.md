@@ -9,7 +9,7 @@ Dans ce cas il est question de *scrapper* les pages html basiques retournées po
 * Le fichier d'indexation `robots.txt` est disponible à la racine (*`ip`/robots.txt*).
 * Il indique deux paths ne devant pas être indexés: */whatever* et */.hidden*.
 * En accédant à la page *`ip`/.hidden/* on découvre de nombreux dossiers contenant chacuns un *README*.
-Via ce script (`npm install && node requests.js `ip` `maxConcurrentRequests`), chaque dossier est ouvert récursivement et l'ensemble des *README* est vérifié
+Via ce script (`npm install && node scrap_hidden.js `ip` `maxConcurrentRequests`), chaque dossier est ouvert récursivement et l'ensemble des *README* est vérifié
 L'output du script est l'unique *README* différant des 7 phrases lambdas, il s'agit par conséquent du flag : *99dde1d35d1fdd283924d84e6d9f1d820*
 
 Note: afin de ne pas surcharger le serveur, `maxConcurrentRequests` limite le nombre de requêtes parallèles envoyées
