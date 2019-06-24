@@ -14,5 +14,5 @@ Chercher des pages cachees.
 ## Explication
 Le fichier `robots.txt` permet de controler l'exploration et l'indexation des sites.
 Les pages precisees ne seront pas explorees par les moteurs de recherches.
-Etant donne que le fichier doit etre public, un utilisateur malvaillant peut le consulter.
+Etant donne que le fichier doit etre public, un utilisateur malveillant peut le consulter.
 Il est donc important de veillier a proteger le contenu des pages precisees.

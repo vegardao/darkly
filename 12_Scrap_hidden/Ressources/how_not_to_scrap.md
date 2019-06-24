@@ -15,7 +15,7 @@ Note: afin de ne pas surcharger le serveur, `maxConcurrentRequests` limite le no
 
 ## Explication
 Le fichier `robots.txt` permet de controler l'exploration et l'indexation des sites.
-Les pages precisees ne seront pas explorees par les moteurs de recherches.
-Etant donne que le fichier doit etre public, un utilisateur malvaillant peut le consulter.
-Il est donc important de veiller a protéger le contenu des pages precisées.
+Les pages précisées ne seront pas explorées par les moteurs de recherche.
+Etant donné que le fichier doit être public, un utilisateur malveillant peut le consulter.
+Il est donc important de veiller à protéger l'accès ou le contenu des pages précisées.
 Il est par ailleurs possible de limiter le nombre de requêtes parallèles autorisées par le serveur (notamment depuis nginx). Ce qui limiterait le scrapping de plusieurs pages et l'overload du serveur
