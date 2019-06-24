@@ -9,6 +9,9 @@ Recupere des datas grace a une injection SQL
 - On tombe sur : `First name: Flag` / `Surname : GetThe`
 - Notre bible pour les requetes : *http://www.sqlinjection.net/column-names/*
 
+- `TRUE` permet de valider l'expression précédente.
+- `UNION` permet de coupler les résultats d'une première requête avec une seconde dont les composantes doivent être les mêmes.
+
 * `TRUE UNION SELECT table_schema, table_name FROM information_schema.tables`
 Notamment, la table:
 ```
