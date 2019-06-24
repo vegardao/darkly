@@ -16,4 +16,4 @@ Bien que le champ `type` soit `hidden`, ce formulaire est toujours contournable.
 Une securite front ne suffit pas car l'utilisateur peut modifier la valeur du formulaire.
 Utiliser le back pour valider ou non les donnees est la seule securite afin d'eviter un exploit.
 
-Un utilisateur malvaillant pourrait alors utiliser ce champs `mail` pour faire du mail bombing.
+Un utilisateur malveillant pourrait alors utiliser ce champs `mail` pour faire du mail bombing.
