@@ -1,7 +1,10 @@
+# member injection SQL
+
 ## La faille
 `ip`/index.php?page=member
 
-Il est possible de faire une injection SQL en utilisant `UNION` dans le but d'exposer l'intégralité des bases de données du site et leur contenu. Cela permet de découvrir notamment et en particulier les mots de passe enregistrés des admin/root.
+Il est possible de faire une injection SQL en utilisant `UNION` dans le but d'exposer l'intégralité des bases de données du site et leur contenu.
+Cela permet de découvrir notamment et en particulier les mots de passe enregistrés des admin/root.
 
 ## L'explication
 Note: tous les codes suivants ont été insérés dans l'input liée au submit.
