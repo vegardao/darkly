@@ -4,6 +4,7 @@ Modifier le header d'une requete
 ## Comment obtenir le flag
 * Cliquer sur `© BornToSec` en bas de page
 * `ip`/index.php?page=e43ad1fdc54babe674da7c7b8f0127bde61de3fbe01def7d00f151c2fcca6d1c
+* fun fact: e43ad1fdc54babe674da7c7b8f0127bde61de3fbe01def7d00f151c2fcca6d1c = TAMERE (en sha256)...
 
 * En examinant le code source, on trouve en commentaire:
 - `You must cumming from : "https://www.nsa.gov/" to go to the next step`

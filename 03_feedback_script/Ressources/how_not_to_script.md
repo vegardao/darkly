@@ -5,7 +5,7 @@ Lancer un script via un formulaire
 * se rendre a `ip`/?page=feedback
 * remplir le champ `Name` avec :
 * soit `alert`, soit `script`
-* n'importe quelle lettre de ces 2 mots cles fonctionne egalement
+* n'importe quelle lettre ou bloc de lettres de ces 2 mots cles fonctionne egalement
 * cliquer sur `sign guestbook` pour obtenir le flag
 
 ## Fix possible

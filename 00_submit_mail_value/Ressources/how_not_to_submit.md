@@ -4,7 +4,7 @@ Submit une valeur pour un envoi de mail
 ## Comment obtenir le flag
 * Acceder a la page `ip`/?page=recover
 * Seul un bouton `submit` apparait, clic droit / examiner l'element
-* Supprimer la `value` du champ `mail` (qui est `hidden`)
+* Modifier la `value` du champ `mail` (qui est `hidden`)
 * Cliquer sur `Submit` : on obtient le flag.
 
 ## Fix possible
