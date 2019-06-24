@@ -1,6 +1,10 @@
 # Robots.txt Search Engine Optimization
 Chercher des pages cachees.
 
+# Scrapping
+Il est possible de *scrapper* c'est à dire récupérer le contenu d'une page web via des scripts.
+Dans ce cas il est question de *scrapper* les pages html basiques retournées pour l'appel récursif de chaque dossier et le contenu de chaque readme.
+
 ## Comment obtenir le flag
 * Le fichier d'indexation `robots.txt` est disponible à la racine (*`ip`/robots.txt*).
 * Il indique deux paths ne devant pas être indexés: */whatever* et */.hidden*.
