@@ -3,6 +3,8 @@ Envoyer du code sur le serveur, qui pourra éventuellement être exécuté par l
 
 ## Comment obtenir le flag
 * La page *`ip`/?page=upload* permet d'upload des photos
+* En examinant l'element `Parcourir`, le nom de l'input est `uploaded`
+* En examinant l'element `UPLOAD`, le nom de l'input est `Upload`
 * Etant limités par le formulaire du site, on tente de modifier la requête directement via curl
 * On utilisera notre script : `bash upload.sh *ip*`.
 * Il va envoyer au serveur le formulaire rempli d'upload d'une "image" (qui n'en est en réalité pas une)
