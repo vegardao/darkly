@@ -2,7 +2,7 @@ const axios = require('axios');
 var http = require('http');
 const htmlParser = require('node-html-parser');
 
-http.globalAgent.maxSockets = ${process.argv[3]};
+http.globalAgent.maxSockets = process.argv[3];
 
 async function printReadme(path) {
     return axios.get(path + 'README')
